@@ -19,7 +19,7 @@
       position: relative;
       height: 80vh;
       min-height: 520px;
-      background-image: url("Testing_photo.avif");
+      background-image: url("Image/Testing_photo.avif");
       background-size: cover;
       background-position: center;
       display: flex;
@@ -187,6 +187,50 @@
         font-size: 2.2rem;
       }
     }
+
+    /* CONTACT */
+.contact-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  flex: 1;
+  min-width: 220px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-item h3 {
+  margin-bottom: 8px;
+}
+
+.contact-item a {
+  font-size: 0.95rem;
+  word-break: break-all;
+}
+
+/* SECTION BAR */
+.section-bar {
+  background: #0f172a;        /* deep black/blue */
+  color: #f9fafb;
+  padding: 18px 20px;         /* compact height */
+  margin: 40px auto 24px;     /* tighter spacing */
+  max-width: 1100px;
+  border-radius: 10px;
+}
+
+.section-bar h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  letter-spacing: 0.6px;
+}
+
+
   </style>
 </head>
 
@@ -244,81 +288,89 @@
 <section>
   <div class="grid">
     <div class="card">
-      <h3>Experience</h3>
+      <h3>📊 Experience</h3>
       <ul>
-        <li>5+ years of experience in Manual Testing</li>
-        <li>Automation projects (private & professional)</li>
-        <li>Telecom domain experience</li>
-        <li>CRM and business-critical systems</li>
+        <li>✔️ 5+ years of experience in Manual Testing</li>
+        <li>✔️ Automation projects (private & professional)</li>
+        <li>✔️ Telecom domain experience</li>
+        <li>✔️ CRM and business-critical systems</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>Focus</h3>
+      <h3>🎯 Focus</h3>
       <ul>
-        <li>Manual Functional Testing</li>
-        <li>Regression & End-to-End Testing</li>
-        <li>User Acceptance Testing (UAT)</li>
-        <li>Front-End Automation Testing</li>
+        <li>✔️ Manual Functional Testing</li>
+        <li>✔️ Regression & End-to-End Testing</li>
+        <li>✔️ User Acceptance Testing (UAT)</li>
+        <li>✔️ Front-End Automation Testing</li>
       </ul>
     </div>
   </div>
 </section>
 
-<!-- SKILLS -->
+<!-- SECTION BAR -->
+<div class="section-bar">
+  <h2>🧩 Skills</h2>
+</div>
+
 <section>
-  <h2>Skills</h2>
   <div class="grid">
+
     <div class="card">
-      <h3>Testing Types</h3>
+      <h3>🧪 Testing Types</h3>
       <ul>
-        <li>Manual Testing</li>
-        <li>Automation Testing</li>
-        <li>Functional Testing</li>
-        <li>Regression Testing</li>
-        <li>User Acceptance Testing (UAT)</li>
-        <li>End-to-End Testing</li>
+        <li>✔️ Manual Testing</li>
+        <li>✔️ Automation Testing</li>
+        <li>✔️ Functional Testing</li>
+        <li>✔️ Regression Testing</li>
+        <li>✔️ User Acceptance Testing (UAT)</li>
+        <li>✔️ End-to-End Testing</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>Automation & Programming</h3>
+      <h3>🤖 Automation & Programming</h3>
       <ul>
-        <li>Robot Framework</li>
-        <li>Selenium</li>
-        <li>Playwright</li>
-        <li>Python</li>
-        <li>JavaScript</li>
-        <li>Appium</li>
+        <li>✔️ Robot Framework</li>
+        <li>✔️ Selenium</li>
+        <li>✔️ Playwright</li>
+        <li>✔️ Python</li>
+        <li>✔️ JavaScript</li>
+        <li>✔️ Appium</li>
       </ul>
     </div>
 
     <div class="card">
       <h3>Platforms & Applications</h3>
       <ul>
-        <li>Salesforce</li>
-        <li>Microsoft Dynamics 365</li>
-        <li>Maxbill & Omnius</li>
-        <li>Web Applications</li>
-        <li>Mobile Applications</li>
+        <li>✔️ Salesforce</li>
+        <li>✔️ Microsoft Dynamics 365</li>
+        <li>✔️ Maxbill & Omnius</li>
+        <li>✔️ Web Applications</li>
+        <li>✔️ Mobile Applications</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>Tools & Ways of Working</h3>
+      <h3>🛠 Tools & Ways of Working</h3>
       <ul>
-        <li>Azure DevOps</li>
-        <li>Jira</li>
-        <li>GitHub</li>
-        <li>Agile / SAFe</li>
+        <li>✔️ Azure DevOps</li>
+        <li>✔️ Jira</li>
+        <li>✔️ GitHub</li>
+        <li>✔️ Agile / SAFe</li>
       </ul>
     </div>
+
   </div>
 </section>
 
-<!-- AUTOMATION PROJECTS -->
+<!-- SECTION BAR -->
+<div class="section-bar">
+  <h2>🤖 Automation Projects</h2>
+</div>
+
 <section>
-  <h2>Automation Projects</h2>
   <div class="card">
     <h3>Frontend Test Automation – Proof of Work</h3>
     <p>
@@ -331,21 +383,70 @@
   </div>
 </section>
 
-<!-- HOW I WORK -->
+
+<!-- SECTION BAR -->
+<div class="section-bar">
+  <h2>🧠 How I Work</h2>
+</div>
+
 <section>
-  <h2>How I Work</h2>
-  <div class="card">
-    <p>
-      I approach testing from a quality and risk-based mindset. I start by
-      understanding business requirements, identify high-risk areas, and
-      ensure critical paths are covered.
-    </p>
-    <p>
-      I value clear communication, actionable defect reporting, and close
-      collaboration to prevent issues early.
-    </p>
+<div class="card">
+  <p>
+    I approach testing with a strong focus on <strong>quality, risk awareness, and business value</strong>.
+    Rather than only validating individual features, I aim to understand the complete end-to-end
+    business flow of an application.
+  </p>
+
+  <p>
+    By analyzing requirements, user stories, and acceptance criteria, I identify high-risk areas early
+    and ensure that critical user journeys are thoroughly tested — both manually and through automation
+    where it adds real value.
+  </p>
+
+  <ul>
+    <li>🔍 Understand business processes before designing tests</li>
+    <li>🎯 Apply risk-based testing to focus on what matters most</li>
+    <li>🧪 Combine exploratory, functional, regression, and UAT testing effectively</li>
+    <li>🤝 Collaborate closely with developers, product owners, and stakeholders</li>
+    <li>📝 Write clear, actionable defect reports that support fast resolution</li>
+    <li>🔁 Aim to prevent issues early, not just detect them late</li>
+  </ul>
+</div>
+</section>
+
+
+<!-- SECTION BAR -->
+<div class="section-bar">
+  <h2>📬 Contact</h2>
+</div>
+
+<section>
+  <div class="contact-grid">
+
+    <div class="contact-item">
+      <h3>🐙 GitHub</h3>
+      <a href="https://github.com/ScriptingQA" target="_blank">
+        github.com/ScriptingQA
+      </a>
+    </div>
+
+    <div class="contact-item">
+      <h3>💼 LinkedIn</h3>
+      <a href="https://www.linkedin.com/in/rabbanigunes/" target="_blank">
+        linkedin.com/in/rabbanigunes
+      </a>
+    </div>
+
+    <div class="contact-item">
+      <h3>✉️ Email</h3>
+      <a href="mailto:rabbani-gunes@outlook.com">
+        rabbani-gunes@outlook.com
+      </a>
+    </div>
+
   </div>
 </section>
+
 
 <footer>
   © 2026 – Rabbani Güneş | QA Engineer
@@ -409,4 +510,3 @@
 
 </body>
 </html>
-
