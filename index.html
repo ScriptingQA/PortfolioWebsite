@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QA Engineer Portfolio</title>
+
+  <style>
+    body {
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      margin: 0;
+      background: #ffffff;
+      color: #111827;
+      line-height: 1.6;
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      height: 80vh;
+      min-height: 520px;
+      background-image: url("Image/Testing_photo.avif");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.65);
+    }
+
+    .hero-content {
+      position: relative;
+      max-width: 1100px;
+      padding: 0 20px;
+      margin: auto;
+      color: #ffffff;
+    }
+
+    /* SLIDER */
+    .slides {
+      position: relative;
+      min-height: 180px;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.8s ease;
+    }
+
+    .slide.active {
+      opacity: 1;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 3.1rem;
+      margin-bottom: 10px;
+    }
+
+    .hero-subtitle {
+      font-size: 1.05rem;
+      letter-spacing: 0.5px;
+      color: #e5e7eb;
+      margin: 0;
+    }
+
+    .hero-divider {
+      width: 60px;
+      height: 2px;
+      background: rgba(255,255,255,0.4);
+      margin: 14px 0;
+    }
+
+    .hero-description {
+      font-size: 1.05rem;
+      max-width: 620px;
+      color: #d1d5db;
+      margin: 0;
+    }
+
+    /* SLIDER BUTTONS */
+    .slider-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.4);
+      background: rgba(0,0,0,0.35);
+      color: #ffffff;
+      font-size: 1.6rem;
+      cursor: pointer;
+      opacity: 0.3;
+      transition: opacity 0.3s ease, background 0.3s ease;
+      z-index: 10;
+    }
+
+    .slider-btn.left { left: 24px; }
+    .slider-btn.right { right: 24px; }
+
+    .hero:hover .slider-btn {
+      opacity: 1;
+    }
+
+    .slider-btn:hover {
+      background: rgba(255,255,255,0.15);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 1.7rem;
+      margin-bottom: 20px;
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
+    /* CARD */
+    .card {
+      background: #fafafa;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      color: #4b5563;
+      margin-bottom: 10px;
+    }
+
+    .card ul {
+      padding-left: 18px;
+      margin: 0;
+      color: #4b5563;
+    }
+
+    .card li {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: #111827;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      border-top: 1px solid #e5e7eb;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        height: auto;
+        padding: 80px 0;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<header class="hero">
+
+  <div class="hero-content">
+    <div class="slides">
+
+      <!-- SLIDE 1 -->
+      <div class="slide active">
+        <h1>Rabbani Güneş</h1>
+        <p class="hero-subtitle">
+          QA Engineer specializing in manual testing and frontend automation testing
+        </p>
+        <div class="hero-divider"></div>
+        <p class="hero-description">
+          Focused on quality, risk-driven testing, and reliable software delivery
+          in Agile environments.
+        </p>
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="slide">
+        <h1>5+ Years of QA Experience</h1>
+        <p class="hero-description">
+          Extensive experience in manual functional testing within the telecom
+          domain, working with CRM systems such as Salesforce and Microsoft
+          Dynamics 365 in Agile / SAFe teams.
+        </p>
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="slide">
+        <h1>Quality Beyond Test Cases</h1>
+        <p class="hero-description">
+          I focus on understanding business flows, identifying risks early,
+          and preventing defects. Automation is applied where it adds real value
+          to regression testing and critical user journeys.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CONTROLS -->
+  <button class="slider-btn left" onclick="prevSlide()">‹</button>
+  <button class="slider-btn right" onclick="nextSlide()">›</button>
+
+</header>
+
+<!-- EXPERIENCE SUMMARY -->
+<section>
+  <div class="grid">
+    <div class="card">
+      <h3>Experience</h3>
+      <ul>
+        <li>5+ years of experience in Manual Testing</li>
+        <li>Automation projects (private & professional)</li>
+        <li>Telecom domain experience</li>
+        <li>CRM and business-critical systems</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Focus</h3>
+      <ul>
+        <li>Manual Functional Testing</li>
+        <li>Regression & End-to-End Testing</li>
+        <li>User Acceptance Testing (UAT)</li>
+        <li>Front-End Automation Testing</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Testing Types</h3>
+      <ul>
+        <li>Manual Testing</li>
+        <li>Automation Testing</li>
+        <li>Functional Testing</li>
+        <li>Regression Testing</li>
+        <li>User Acceptance Testing (UAT)</li>
+        <li>End-to-End Testing</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Automation & Programming</h3>
+      <ul>
+        <li>Robot Framework</li>
+        <li>Selenium</li>
+        <li>Playwright</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Appium</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Platforms & Applications</h3>
+      <ul>
+        <li>Salesforce</li>
+        <li>Microsoft Dynamics 365</li>
+        <li>Maxbill & Omnius</li>
+        <li>Web Applications</li>
+        <li>Mobile Applications</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Tools & Ways of Working</h3>
+      <ul>
+        <li>Azure DevOps</li>
+        <li>Jira</li>
+        <li>GitHub</li>
+        <li>Agile / SAFe</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- AUTOMATION PROJECTS -->
+<section>
+  <h2>Automation Projects</h2>
+  <div class="card">
+    <h3>Frontend Test Automation – Proof of Work</h3>
+    <p>
+      Automation project focused on frontend UI testing for web applications,
+      including login flows, navigation, form validation, and document downloads.
+    </p>
+    <a href="https://github.com/ScriptingQA/Frontend-Test-Automation" target="_blank">
+      View project on GitHub
+    </a>
+  </div>
+</section>
+
+<!-- HOW I WORK -->
+<section>
+  <h2>How I Work</h2>
+  <div class="card">
+    <p>
+      I approach testing from a quality and risk-based mindset. I start by
+      understanding business requirements, identify high-risk areas, and
+      ensure critical paths are covered.
+    </p>
+    <p>
+      I value clear communication, actionable defect reporting, and close
+      collaboration to prevent issues early.
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2026 – Rabbani Güneş | QA Engineer
+</footer>
+
+<script>
+  const slides = document.querySelectorAll(".slide");
+  let currentIndex = 0;
+  let interval;
+
+  function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[index].classList.add("active");
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+  }
+
+  function startSlider() {
+    interval = setInterval(nextSlide, 3000);
+  }
+
+  function resetSlider() {
+    clearInterval(interval);
+    startSlider();
+  }
+
+  // Button interactions
+  document.querySelector(".slider-btn.left").addEventListener("click", () => {
+    prevSlide();
+    resetSlider();
+  });
+
+  document.querySelector(".slider-btn.right").addEventListener("click", () => {
+    nextSlide();
+    resetSlider();
+  });
+
+  // Pause on hover
+  document.querySelector(".hero").addEventListener("mouseenter", () => {
+    clearInterval(interval);
+  });
+
+  document.querySelector(".hero").addEventListener("mouseleave", () => {
+    startSlider();
+  });
+
+  // ✅ Smooth first-load behavior
+  setTimeout(() => {
+    nextSlide();     // first transition
+    startSlider();   // then normal rhythm
+  }, 1800);          // ← perfect initial delay
+</script>
+
+</body>
+</html>
