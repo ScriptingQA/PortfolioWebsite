@@ -19,7 +19,7 @@
       position: relative;
       height: 80vh;
       min-height: 520px;
-      background-image: url("Testing_photo_new.avif");
+      background-image: url("Image/Testing_photo_new.avif");
       background-size: cover;
       background-position: center;
       display: flex;
@@ -130,8 +130,8 @@
     /* GRID */
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 22px;
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      gap: 24px;
     }
 
     /* CARD */
@@ -179,6 +179,10 @@
 
     @media (max-width: 768px) {
       .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .grid {
         height: auto;
         padding: 80px 0;
       }
@@ -510,6 +514,3 @@
 
 </body>
 </html>
-
-
-
