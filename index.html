@@ -19,9 +19,10 @@
       position: relative;
       height: 80vh;
       min-height: 520px;
-      background-image: url("Image/Testing_photo_new.avif");
+      background-image: url("Image/Testing_photo.jpg");
       background-size: cover;
       background-position: center;
+      background-attachment: fixed; /* ADD THIS */
       display: flex;
       align-items: center;
       overflow: hidden;
@@ -178,19 +179,24 @@
     }
 
     @media (max-width: 768px) {
+
       .hero {
-        grid-template-columns: 1fr;
+        height: auto;
+        min-height: 100vh;
+        padding: 80px 0;
+        background-attachment: scroll;
       }
 
       .grid {
-        height: auto;
-        padding: 80px 0;
+        grid-template-columns: 1fr;
       }
 
       .hero h1 {
         font-size: 2.2rem;
       }
+
     }
+
 
     /* CONTACT */
 .contact-grid {
